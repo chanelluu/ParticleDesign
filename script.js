@@ -54,8 +54,8 @@ function clearValue(){
   document.getElementById("input-field").value="";
 }
 
-var submit_btn = document.getElementById("submit_btn");
-submit_btn.addEventListener("click", storeValue);
-function storeValue(){
+// var submit_btn = document.getElementById("submit_btn");
+// submit_btn.addEventListener("click", storeValue);
+// function storeValue(){
 
-}
+// }

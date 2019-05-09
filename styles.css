@@ -1,6 +1,7 @@
 body{
 	background-color: #EDF0F3;
 	margin:0px;
+  cursor: default;
 }
 
 .body-txt-purple{
@@ -29,6 +30,11 @@ body{
 
 .margin-bot{
 	margin-bottom: 30px;
+}
+
+.section{
+  padding-left:85px;
+  padding-right:85px;
 }
 /*----------TOP BAR----------*/
 .top-bar{
@@ -79,13 +85,11 @@ body{
 /*Left Text*/
 .section-one{
 	height: 600px;
-	padding-left:85px;
 }
 
 .txt-block{
-	width: 32%;
+	width: 33.33%;
 	display: inline-block;
-	margin-right: 50px;
 }
 
 #title-txt{
@@ -216,6 +220,7 @@ body{
 /*----------SECTION TWO----------*/
 .section-two{
 	margin-top:50px;
+  height:600px;
 }
 
 .float-l{
@@ -223,7 +228,7 @@ body{
 }
 
 #input-field{
-	width: 272px;
+	width: 60%;
   border: none;
   color: none;
   background-color: #EDF0F3;
@@ -242,6 +247,64 @@ input[type="text"]
   line-height: 27px;
   color: #59CBA9;
 	font-family: 'Archivo', sans-serif;
+}
+
+/*----------SECTION THREE----------*/
+.section-three{
+  height: 600px;
+  padding-left:85px;
+  margin-top:50px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  /*height: 300px;*/ /* Should be removed. Only for demonstration */
+  /*background-color: white;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+}
+
+.column-txt{
+  padding-right:15px;
+  padding-left: 18px;
+}
+
+
+.green-line-ver{
+  height: 20px;
+  width: 2px;
+  background-color: #59CBA9;
+  float: left;
+  margin-top: 26px;
+  transition: height 0.1s ease;
+}
+
+.toggle-txt{
+  display: none;
+}
+
+.column:hover .toggle-txt{
+  display: block;
+}
+
+.column:hover .green-line-ver{
+  height: 88px;
+}
+
+/*---------MOBILE PHONE VIEW---------*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 
