@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Particle&nbsp;Design</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo:400,500,700" rel="stylesheet">
+
+</head>
+<body>
+	<!-- TOP BAR: LOGO + MENU -->
+	<div class = "top-bar">
+		<img id = "logo-img" src = "images/logo.png">
+		<p class = "body-txt-purple" id = "title">PARTICLE DESIGN</p>
+		<div id = "purple-line-left"></div>
+		<p class = "body-txt-purple" id = "menu-item">HOME</p>
+		<div id = "purple-line-right"></div>		
+	</div>
+
+	<!-- ----------SECTION ONE---------- -->
+	<div class="section-one">
+		<div class="txt-block">
+			<p class="body-txt-purple" id="title-txt">
+				A Design Framework for Handheld Augmented Reality
+			</p>
+
+			<!-- SLIDE 1: WHAT IS HAR -->
+			<div class="slide fade">
+				<p class="body-txt-purple" id="subtitle-txt">
+					What is Handheld Augmented Reality?
+				</p>
+				<div class="green-line margin-bot"></div>
+				<p class="body-txt-purple body-txt margin-bot">
+					Define Handheld AR and the three forming elements: Component, Interface and User.
+				</p>
+				<div class="green-btn margin-bot">
+					<p class="body-txt-green btn-txt">COMING SOON</p>
+				</div>
+			</div>
+
+			<!-- SLIDE 2: COMPONENT -->
+			<div class="slide fade">
+				<p class="body-txt-purple" id="subtitle-txt">
+					Component
+				</p>
+				<div class="green-line margin-bot"></div>
+				<p class="body-txt-purple body-txt margin-bot">
+					Breakdown the five attributes of any component: Origin, Dimensionality, Temporality, Position and Interactivity.
+				</p>
+				<div class="green-btn margin-bot">
+					<p class="body-txt-green btn-txt">COMING SOON</p>
+				</div>
+			</div>
+
+			<!-- SLIDE 3: INTERFACE -->
+			<div class="slide fade">
+				<p class="body-txt-purple" id="subtitle-txt">
+					Interface
+				</p>
+				<div class="green-line margin-bot"></div>
+				<p class="body-txt-purple body-txt margin-bot">
+					Discuss the difference between the Controller and Viewport layers of the interface.
+				</p>
+				<div class="green-btn margin-bot">
+					<p class="body-txt-green btn-txt">COMING SOON</p>
+				</div>
+			</div>
+
+			<!-- SLIDE 4: USER -->
+			<div class="slide fade">
+				<p class="body-txt-purple" id="subtitle-txt">
+					User
+				</p>
+				<div class="green-line margin-bot"></div>
+				<p class="body-txt-purple body-txt margin-bot">
+					Discuss the relationship between the User and the Device and high-level design guidelines.
+				</p>
+				<div class="green-btn margin-bot">
+					<p class="body-txt-green btn-txt">COMING SOON</p>
+				</div>
+			</div>
+
+			<!-- NAVIGATIONAL DOTS -->
+			<div class="dots">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			</div>
+		</div>
+
+		<div class="main-img-container float-r">
+				<img class="img" src="images/1-whatishar.png">
+		</div>
+	</div>
+
+	<!-- ARROW POINTING DOWN -->
+	<div class="arrow-container">
+		<img id="arrow-img" src="images/arrow.png"></div>
+	</div>
+
+	<!-- ----------SECTION TWO---------- -->
+	<div class="section-two">
+		<div class="main-img-container float-l">
+			<img class="img" src="images/1-whatishar.png">
+		</div>
+		<div class="txt-block float-r">
+			<p class="body-txt-purple" id="title-txt">
+				Download Particle Design mobile app (beta version)
+			</p>
+			<p class="body-txt-purple" id="subtitle-txt">
+					Featuring interactive examples in augmented reality.
+				</p>
+				<p class="body-txt-purple body-txt margin-bot">
+					Enter your email below to receive an invite link. Currently available for iOS only.
+				</p>
+
+				<input id="input-field" type="text" name="fname" value="Enter Your Email">
+
+				<div class="green-btn margin-bot float-r">
+					<p class="body-txt-green btn-txt">SUBMIT</p>
+				</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
