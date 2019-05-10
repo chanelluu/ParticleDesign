@@ -43,7 +43,7 @@ function showSlidesAutmatic() {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 
-  setTimeout(showSlidesAutmatic, 7000); // Change image every 2 seconds
+  setTimeout(showSlidesAutmatic, 10000); // Change image every 2 seconds
 }
 
 // Clear value field when clicked
