@@ -12,15 +12,19 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
+  var images = document.getElementsByClassName("carousel-img");
+
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+      slides[i].style.display = "none";
+      images[i].style.display = "none"; 
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block"; 
+  images[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 
@@ -29,8 +33,11 @@ function showSlidesAutmatic() {
   var i;
   var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
+  var images = document.getElementsByClassName("carousel-img");
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none"; 
+    images[i].style.display = "none"; 
   }
 
   slideIndex++;
@@ -41,9 +48,10 @@ function showSlidesAutmatic() {
   } 
 
   slides[slideIndex-1].style.display = "block";
+  images[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 
-  setTimeout(showSlidesAutmatic, 10000); // Change image every 2 seconds
+  setTimeout(showSlidesAutmatic, 6000); // Change image every 2 seconds
 }
 
 // Clear value field when clicked
@@ -72,17 +80,6 @@ $.fn.serializeObject = function() {
     });
     return o;
 };
-
-// $('#submit-btn').on('click', function(e) {
-//   e.preventDefault();
-//   var jqxhr = $.ajax({
-//     url: url,
-//     method: "GET",
-//     dataType: "json",
-//     data: $input.serializeObject(),
-//     success: function(e){console.log(e);}
-//   });
-// });
 
 // Validate if input is an email
 function validateEmail(email) {
